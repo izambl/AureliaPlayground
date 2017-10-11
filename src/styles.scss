@@ -1,0 +1,35 @@
+html, body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+
+    & > header {
+        display: block;
+        box-sizing: border-box;
+        flex: 0 0 80px;
+        background-color: #ffffff;
+        border-bottom: 4px solid #00adad;
+    }
+
+    & > main {
+        display: block;
+        flex: 1 1 auto;
+        background-color: #004f62;
+        overflow: auto;
+    }
+
+    & > footer {
+        display: block;
+        flex: 0 0 140px;
+        background-color: #eeeeee;
+    }
+}
