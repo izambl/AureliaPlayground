@@ -11,13 +11,18 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
+}
 
+#aurelia-playground-app {
     & > header {
-        display: block;
+        display: flex;
         box-sizing: border-box;
         flex: 0 0 auto;
         height: 4em;
         line-height: 4em;
+        button {
+            transition: transform linear 100ms;
+        }
     }
 
     & > main {
@@ -27,7 +32,25 @@ body {
         flex: 1 1 auto;
         background-color: #004f62;
         overflow: hidden;
-        padding-left: 25em;
+        transform: translate3d(0, 0, 0);
+        transition: padding ease-in 100ms;
+        padding-left: 0;
+        & > sidebar {
+            display: block;
+            position: absolute;
+            box-sizing: border-box;
+            z-index: 1500;
+            background-color: #002126;
+            box-shadow: 1px 1px 1px #000000;
+            color: #eeeeee;
+            padding: 0.5em;
+            top: 0;
+            bottom: 0;
+            left: -20em;
+            width: 20em;
+            transform: translate3d(0, 0, 0);
+            transition: left ease-in 100ms;
+        }
     }
 
     & > footer {
@@ -35,29 +58,19 @@ body {
         flex: 0 0 140px;
         background-color: #eeeeee;
     }
-}
 
-body > main {
-    & > sidebar {
-        display: block;
-        position: absolute;
-        box-sizing: border-box;
-        z-index: 1500;
-        background-color: #002126;
-        box-shadow: 1px 1px 1px #000000;
-        color: #eeeeee;
-        padding: 0.5em;
-        top: 0;
-        bottom: 0;
-        width: 25em;
-        transform: translate3d(0, 0, 0);
-        transition: left linear 200ms;
-    }
-    &.sidebar-visible sidebar {
-        left: 0;
-    }
-    &.sidebar-hidden sidebar {
-        left: -25em;
+    &.sidebar-visible {
+        > main {
+            padding-left: 20em;
+            & > sidebar {
+                left: 0;
+            }
+        }
+        > header {
+            button {
+                transform: rotate(90deg);
+            }
+        }
     }
 }
 

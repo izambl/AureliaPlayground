@@ -15,10 +15,19 @@ export class App
         this.api = api;
         this.ea  = ea;
 
+        this.app = document.getElementById('aurelia-playground-app');
+
         this.sidebarShown = true;
 
         ea.subscribe(ToggleSidebar,  msg => {
             this.sidebarShown = !this.sidebarShown;
+
+            if (this.sidebarShown) {
+                this.app.classList.add('sidebar-visible');
+            }
+            else {
+                this.app.classList.remove('sidebar-visible');
+            }
         });
     }
 

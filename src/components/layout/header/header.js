@@ -7,7 +7,6 @@ import { ToggleSidebar } from '../../../actions/sidebar';
 export class Header
 {
     constructor(ea) {
-        this.title = 'title';
         this.ea    = ea;
     }
 
