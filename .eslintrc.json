@@ -4,6 +4,13 @@
         "indent": [
             "error",
             4
+        ],
+        "brace-style": [
+            2,
+            "stroustrup",
+            {
+                "allowSingleLine": true
+            }
         ]
     }
 }
