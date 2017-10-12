@@ -5,7 +5,7 @@ import { EventAggregator } from 'aurelia-event-aggregator';
 import { ToggleSidebar } from 'actions/sidebar';
 
 import { WebAPI } from './web-api';
-import Routes   from './app/routes';
+import Routes from './app/routes';
 
 
 @inject(WebAPI, EventAggregator)
@@ -32,8 +32,10 @@ export class App
     }
 
     configureRouter(config, router) {
-        config.title = 'Contacts';
+        config.title = 'Tiempo goals';
         config.map(Routes);
+
+        config.mapUnknownRoutes('');
 
         this.router = router;
     }

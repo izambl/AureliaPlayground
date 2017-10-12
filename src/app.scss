@@ -1,3 +1,5 @@
+$sidebarWidth: 250px;
+
 html, body {
     display: block;
     margin: 0;
@@ -30,7 +32,7 @@ body {
         box-sizing: border-box;
         position: relative;
         flex: 1 1 auto;
-        background-color: #004f62;
+        background-color: #057483;
         overflow: hidden;
         transform: translate3d(0, 0, 0);
         transition: padding ease-in 100ms;
@@ -40,14 +42,13 @@ body {
             position: absolute;
             box-sizing: border-box;
             z-index: 1500;
-            background-color: #002126;
+            background-color: #eeeeee;
             box-shadow: 1px 1px 1px #000000;
-            color: #eeeeee;
             padding: 0.5em;
             top: 0;
             bottom: 0;
-            left: -20em;
-            width: 20em;
+            left: -$sidebarWidth;
+            width: $sidebarWidth;
             transform: translate3d(0, 0, 0);
             transition: left ease-in 100ms;
         }
@@ -56,14 +57,18 @@ body {
     & > footer {
         display: block;
         flex: 0 0 140px;
-        background-color: #eeeeee;
+        background-color: #ffffff;
+        border-top: 4px solid #00adad;
     }
 
     &.sidebar-visible {
         > main {
-            padding-left: 20em;
+            padding-left: $sidebarWidth;
             & > sidebar {
                 left: 0;
+            }
+            > section {
+                left: $sidebarWidth;
             }
         }
         > header {
@@ -80,6 +85,17 @@ body > header {
     }
 }
 
+body > main > section {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    padding: 1em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
 
 .icon-button {
     border: 0;
