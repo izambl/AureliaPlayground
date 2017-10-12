@@ -79,20 +79,12 @@
             "main": "aurelia-testing",
             "env": "dev"
           },
-          "jquery",
           {
             "name": "nprogress",
             "path": "../node_modules/nprogress",
             "main": "nprogress",
             "resources": [
               "nprogress.css"
-            ]
-          },
-          {
-            "name": "kube",
-            "path": "../node_modules/imperavi-kube/dist",
-            "resources": [
-                "css/kube.css"
             ]
           },
           {

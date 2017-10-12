@@ -1,0 +1,29 @@
+<template>
+    <require from="../../contact-list"></require>
+    <require from="../sidebar/sidebar"></require>
+
+    <require from="./main.css"></require>
+
+    <sidebar></sidebar>
+
+    <div class="row">
+        <div class="col col-6">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa fa-user"></i>
+                        <span>Contacts</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="col col-6">
+            <div class="container">
+                <div class="row">
+                    <contact-list class="col-md-4"></contact-list>
+                    <router-view class="col-md-8"></router-view>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
