@@ -1,10 +1,11 @@
-import { inject } from 'aurelia-framework';
+import { inject, containerless } from 'aurelia-framework';
 import { EventAggregator } from 'aurelia-event-aggregator';
 
 import { ToggleSidebar } from '../../../actions/sidebar';
 
+@containerless
 @inject(EventAggregator)
-export class Header
+export class TdapHeader
 {
     constructor(ea) {
         this.ea    = ea;

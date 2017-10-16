@@ -2,13 +2,13 @@
     <require from="font-awesome/font-awesome.css"></require>
     <require from="./app.css"></require>
 
-    <require from="./components/layout/header/header"></require>
-    <require from="./components/layout/footer/footer"></require>
-    <require from="./components/layout/main/main"></require>
+    <require from="./components/layout/tdap-header/tdap-header"></require>
+    <require from="./components/layout/tdap-footer/tdap-footer"></require>
+    <require from="./components/layout/tdap-main/tdap-main"></require>
 
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <tdap-header></tdap-header>
+    <tdap-main></tdap-main>
+    <tdap-footer></tdap-footer>
 
     <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
 </template>

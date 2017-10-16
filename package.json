@@ -16,6 +16,9 @@
     "requirejs": "^2.3.2",
     "text": "github:requirejs/text#latest"
   },
+  "scripts": {
+      "start": "au run --watch"
+  },
   "peerDependencies": {},
   "devDependencies": {
     "aurelia-cli": "^0.31.3",
