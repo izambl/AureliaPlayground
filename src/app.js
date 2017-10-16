@@ -5,7 +5,7 @@ import { EventAggregator } from 'aurelia-event-aggregator';
 import { ToggleSidebar } from 'actions/sidebar';
 
 import { WebAPI } from './web-api';
-import Routes from './app/routes';
+import Routes from './app/tdap-routes';
 
 
 @inject(WebAPI, EventAggregator)

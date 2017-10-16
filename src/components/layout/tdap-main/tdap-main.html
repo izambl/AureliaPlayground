@@ -1,15 +1,12 @@
 <template>
-    <require from="../../contact-list"></require>
     <require from="../tdap-sidebar/tdap-sidebar"></require>
 
     <require from="./tdap-main.css"></require>
 
     <main>
         <tdap-sidebar></tdap-sidebar>
-
         <section>
-            <contact-list class="col-md-4"></contact-list>
-            <router-view class="col-md-8"></router-view>
+            <router-view></router-view>
         </section>
     </main>
 </template>
