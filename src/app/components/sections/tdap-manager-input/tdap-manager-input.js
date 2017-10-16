@@ -1,4 +1,4 @@
-export class TdapMyGoals
+export class TdapManagerInput
 {
     constructor() {
 
