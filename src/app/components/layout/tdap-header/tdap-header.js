@@ -1,7 +1,7 @@
 import { inject, containerless } from 'aurelia-framework';
 import { EventAggregator } from 'aurelia-event-aggregator';
 
-import { ToggleSidebar } from '../../../actions/sidebar';
+import { ToggleSidebar } from 'app/actions/sidebar';
 
 @containerless
 @inject(EventAggregator)
