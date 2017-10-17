@@ -17,7 +17,8 @@
     "text": "github:requirejs/text#latest"
   },
   "scripts": {
-      "start": "au run --watch"
+      "start": "au run --watch",
+      "serve": "node srv/server.js"
   },
   "peerDependencies": {},
   "devDependencies": {

@@ -8,7 +8,8 @@ export class LoadingIndicator {
     loadingChanged(newValue) {
         if (newValue) {
             nprogress.start();
-        } else {
+        }
+        else {
             nprogress.done();
         }
     }
