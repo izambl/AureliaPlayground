@@ -12,11 +12,10 @@
     "aurelia-bootstrapper": "^2.1.1",
     "bluebird": "^3.4.1",
     "font-awesome": "^4.7.0",
-    "loopback": "^3.15.0",
-    "loopback-boot": "^2.26.2",
     "nprogress": "^0.2.0",
     "requirejs": "^2.3.2",
-    "text": "github:requirejs/text#latest"
+    "text": "github:requirejs/text#latest",
+    "whatwg-fetch": "^2.0.3"
   },
   "scripts": {
     "start": "au run --watch",

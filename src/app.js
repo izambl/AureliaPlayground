@@ -4,15 +4,13 @@ import { EventAggregator } from 'aurelia-event-aggregator';
 
 import { ToggleSidebar } from 'app/actions/sidebar';
 
-import { WebAPI } from './web-api';
 import Routes from './app/tdap-routes';
 
 
-@inject(WebAPI, EventAggregator)
+@inject( EventAggregator)
 export class App
 {
-    constructor(api, ea) {
-        this.api = api;
+    constructor(ea) {
         this.ea  = ea;
 
         this.app = document.getElementById('aurelia-playground-app');
