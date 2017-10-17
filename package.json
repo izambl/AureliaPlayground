@@ -12,13 +12,15 @@
     "aurelia-bootstrapper": "^2.1.1",
     "bluebird": "^3.4.1",
     "font-awesome": "^4.7.0",
+    "loopback": "^3.15.0",
+    "loopback-boot": "^2.26.2",
     "nprogress": "^0.2.0",
     "requirejs": "^2.3.2",
     "text": "github:requirejs/text#latest"
   },
   "scripts": {
-      "start": "au run --watch",
-      "serve": "node srv/server.js"
+    "start": "au run --watch",
+    "serve": "node srv/server.js"
   },
   "peerDependencies": {},
   "devDependencies": {
